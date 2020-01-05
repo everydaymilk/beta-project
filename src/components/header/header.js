@@ -5,21 +5,9 @@ import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <header className="header">
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+    <div className="text-container">
+      <h1 className="header-text">
+        <Link to="/" className="header-link">
           {siteTitle}
         </Link>
       </h1>
